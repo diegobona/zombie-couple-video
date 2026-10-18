@@ -1,0 +1,17 @@
+export const authCopy = {
+  signinDescription: 'Sign in to your account. You can also try one free video without signing in.',
+  signupDescription: 'Creating an account is optional. Your existing free-video allowance carries over; signup does not add another video.',
+  passwordHelp: 'Use 8–100 characters. Choose a password you do not use on other sites.',
+  unavailableProvider: 'This sign-in method is not available. Please use your email and password.',
+  resetUnavailable: 'Password reset emails are currently unavailable. Contact support if you need help accessing your account.',
+  resetInvalid: 'This reset link is missing or invalid. Request a new link to reset your password.',
+  requestReset: 'Request a new reset link',
+  backToSignin: 'Back to sign in',
+  resetSent: 'If an account exists for this email, a password reset link has been sent. Check your inbox and spam folder.',
+  requestFailed: 'We could not connect. Please try again.',
+  signedInAs: 'Signed in as',
+  signOut: 'Sign out',
+  signingOut: 'Signing out…',
+  credits: 'credits',
+  creditsUnavailable: 'Credits unavailable',
+} as const

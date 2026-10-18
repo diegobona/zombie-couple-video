@@ -1,0 +1,65 @@
+.home-page {
+  --primary: #2d483b;
+  --primary-foreground: #fffdf7;
+  --background: #fffdf7;
+  --foreground: #28392f;
+  --card: #fffdf7;
+  --muted: #e9ece2;
+  --muted-foreground: #5f6a5f;
+  --border: #dce1d6;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 48px 24px 88px;
+  color: var(--foreground);
+}
+.home-title { margin: 0 0 30px; max-width: 850px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 500; letter-spacing: -.05em; line-height: 1.08; }
+.home-maker { border-color: #dce1d6; box-shadow: 0 10px 32px #253f2e08; }
+.home-maker form { background: #fffdf7; }
+.home-maker input[type=radio], .home-maker input[type=checkbox] { accent-color: #2d483b; }
+.home-maker button { min-height: 44px; }
+.home-maker [type=submit] { background: #2d483b; color: #fffdf7; }
+.home-maker button:disabled { opacity: .58; }
+.home-intro { margin: 32px 0 0; max-width: 850px; font-size: 17px; line-height: 1.8; color: #5f6a5f; }
+.home-section { margin-top: 72px; scroll-margin-top: 30px; }
+.home-section h2 { margin: 0 0 26px; color: #28392f; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.8rem, 3vw, 2.35rem); font-weight: 500; line-height: 1.18; letter-spacing: -.03em; }
+.step-grid, .example-grid, .related-grid { display: grid; gap: 20px; margin: 0; padding: 0; list-style: none; }
+.step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.step-card { overflow: hidden; border: 1px solid #dce1d6; border-radius: 18px; background: #fffdf7; }
+.step-card img { display: block; width: 100%; height: auto; }
+.step-copy { padding: 18px; }
+.step-copy h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-size: 15px; font-weight: 650; }
+.step-number { display: inline-flex; justify-content: center; align-items: center; width: 23px; height: 23px; flex-shrink: 0; border-radius: 50%; background: #e9ece2; font-size: 12px; }
+.step-copy p, .example-card p { margin: 0; font-size: 14px; line-height: 1.7; color: #5f6a5f; }
+.section-note { margin: -12px 0 24px; max-width: 760px; color: #5f6a5f; font-size: 14px; line-height: 1.7; }
+.example-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.example-card { margin: 0; overflow: hidden; border: 1px solid #dce1d6; border-radius: 20px; background: #fffdf7; }
+.example-card img { display: block; aspect-ratio: 1; width: 100%; height: auto; object-fit: cover; }
+.example-card figcaption { padding: 20px; }
+.example-kind { font-size: 10px; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; color: #6b7968; }
+.example-card h3 { margin: 8px 0; font-size: 18px; font-weight: 650; }
+.faq-list { border-top: 1px solid #dce1d6; }
+.faq-item { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; padding: 25px 0; border-bottom: 1px solid #dce1d6; }
+.faq-item h3 { margin: 0; font-size: 16px; font-weight: 650; line-height: 1.6; }
+.faq-item p { margin: 0; font-size: 15px; line-height: 1.8; color: #5f6a5f; }
+.faq-item a { text-decoration: underline; text-underline-offset: 3px; }
+.related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.related-card { padding: 24px; border-radius: 16px; border: 1px solid #dce1d6; background: #f0f2e9; }
+.related-category { margin: 0 0 12px; color: #63725e; text-transform: uppercase; letter-spacing: .07em; font-size: 10px; font-weight: 650; }
+.related-card h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.5; }
+.related-card a:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 900px) {
+  .step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .example-grid, .related-grid { gap: 16px; }
+  .faq-item { gap: 25px; }
+}
+@media (max-width: 640px) {
+  .home-page { padding: 30px 18px 56px; }
+  .home-title { margin-bottom: 24px; font-size: 39px; }
+  .home-intro { font-size: 16px; }
+  .home-section { margin-top: 48px; }
+  .step-grid { gap: 12px; }
+  .step-copy { padding: 13px; }
+  .step-copy h3 { font-size: 14px; }
+  .example-grid, .related-grid { grid-template-columns: 1fr; }
+  .faq-item { grid-template-columns: 1fr; gap: 10px; padding: 22px 0; }
+}

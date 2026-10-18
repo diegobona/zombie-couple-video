@@ -1,0 +1,18 @@
+# Local-only vars for `wrangler dev`
+# Copy this file to `.dev.vars` (do not commit `.dev.vars`).
+
+# Use local Worker URL for local auth callbacks
+APP_BASE_URL=http://localhost
+BETTER_AUTH_URL=http://127.0.0.1:7001
+
+# Minimal required backend variables for local startup
+DB_DIALECT=d1
+BETTER_AUTH_SECRET=replace-with-a-random-32-char-min-secret
+AUTODL_API_KEY=replace-with-your-provider-api-key
+AUTODL_VIDEO_WORKFLOW_ID=minimax_h3_lightx2v_v5
+
+# Required when testing R2 uploads through `wrangler dev`
+R2_PUBLIC_URL=https://pub-64fae4bb67bd47a6b3eadaa51033a1b0.r2.dev
+
+# Enable when running affiliate E2E scenarios locally (disabled by default).
+AFFILIATE_ENABLED=false

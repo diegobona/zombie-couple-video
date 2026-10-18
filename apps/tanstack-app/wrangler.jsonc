@@ -1,0 +1,42 @@
+// Production resources for zombie-couple-video.net; local preview overrides origins.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zombie-couple-video",
+  "account_id": "c686d583b6d595875de1b8b73462fe42",
+  "compatibility_date": "2026-03-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true }
+  },
+  "secrets": { "required": ["BETTER_AUTH_SECRET", "AUTODL_API_KEY"] },
+  "routes": [
+    { "pattern": "zombie-couple-video.net", "custom_domain": true },
+    { "pattern": "www.zombie-couple-video.net", "custom_domain": true }
+  ],
+  "vars": {
+    "DB_DIALECT": "d1",
+    "APP_BASE_URL": "https://zombie-couple-video.net",
+    "BETTER_AUTH_URL": "https://zombie-couple-video.net",
+    "R2_PUBLIC_URL": "https://media.zombie-couple-video.net",
+    "VITE_STORAGE_PROVIDER": "r2"
+  },
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "zombie-couple-video-uploads",
+      "remote": true
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zombie-couple-video-db",
+      "database_id": "91148059-78df-4402-ab60-125115291bf4",
+      "migrations_dir": "../../libs/database/drizzle-sqlite"
+    }
+  ]
+}

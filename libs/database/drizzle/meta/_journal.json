@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1766651078737,
+      "tag": "0000_optimal_mad_thinker",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780024497079,
+      "tag": "0001_eminent_james_howlett",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1783323930023,
+      "tag": "0002_fresh_princess_powerful",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1786006291824,
+      "tag": "0003_hesitant_skrulls",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1787663425735,
+      "tag": "0004_mute_cyclops",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1787817720732,
+      "tag": "0005_smooth_wither",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791969427033,
+      "tag": "0006_video_tasks",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791974533367,
+      "tag": "0007_anonymous_video_trial",
+      "breakpoints": true
+    }
+  ]
+}

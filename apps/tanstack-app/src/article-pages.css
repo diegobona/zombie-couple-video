@@ -1,0 +1,23 @@
+.article-page { max-width: 1008px; }
+.article-page .home-title { max-width: 950px; }
+.article-page .article-intro { max-width: 780px; margin: 0 0 36px; font-size: 18px; line-height: 1.8; color: #5f6a5f; }
+.article-page .article-section { margin-top: 48px; scroll-margin-top: 30px; }
+.article-page .article-section h2 { margin: 0 0 20px; color: #28392f; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.7rem, 3vw, 2.25rem); font-weight: 500; line-height: 1.25; letter-spacing: -.025em; }
+.article-page .article-section h3 { margin: 24px 0 10px; font-size: 18px; font-weight: 600; line-height: 1.5; }
+.article-page .article-section p, .article-page .article-section li { max-width: 780px; color: #5f6a5f; font-size: 16px; line-height: 1.85; }
+.article-page .article-section p { margin: 0 0 18px; }
+.article-page a { color: #2d483b; text-decoration: underline; text-underline-offset: 4px; }
+.article-page a:hover { text-decoration-thickness: 2px; }
+.article-page .article-section ol { margin: 0 0 24px; padding-left: 25px; }
+.article-page .article-section li { padding-left: 6px; margin-bottom: 12px; }
+.article-page .article-figure { margin: 24px 0 0; max-width: 900px; }
+.article-page .article-figure img { display: block; width: 100%; height: auto; border: 1px solid #dce1d6; border-radius: 14px; }
+.article-page .article-figure figcaption { margin-top: 12px; color: #5f6a5f; font-size: 14px; line-height: 1.7; }
+.article-page .article-faq { padding: 0 0 12px; margin-top: 24px; border-bottom: 1px solid #dce1d6; }
+.article-page .article-faq h3 { margin-top: 0; }
+.article-page .article-navigation { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 40px; padding-top: 24px; border-top: 1px solid #dce1d6; font-size: 15px; line-height: 1.6; }
+@media (max-width: 640px) {
+  .article-page .home-title { font-size: 36px; overflow-wrap: anywhere; }
+  .article-page .article-intro { font-size: 16px; }
+  .article-page .article-section { margin-top: 36px; }
+}

@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `credit_transaction_purchase_order_id_idx` ON `credit_transaction` (`order_id`) WHERE "credit_transaction"."type" = 'purchase' AND "credit_transaction"."order_id" IS NOT NULL;
